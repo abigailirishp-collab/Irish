@@ -1,0 +1,328 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Butterflies of the World</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: pink;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ffcf70, #ff9ec4, #c7a5ff);
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 45px;
+            color: #54245c;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+            color: #4a3150;
+        }
+
+        nav {
+            background-color: white;
+            text-align: center;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: #F95EEF;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffdf75;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        .hero img {
+            width: 90%;
+            max-width: 800px;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 18px;
+            box-shadow: 0 5px 15px #d8bfd8;
+        }
+
+        section {
+            padding: 45px 8%;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #754b91;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .facts {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 20px;
+            width: 280px;
+            box-shadow: 0 4px 12px #e5d5e8;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .card h3 {
+            color: #a34b9b;
+            margin-bottom: 8px;
+        }
+
+        #life-cycle {
+            background-color: #f5e8ff;
+        }
+
+        .stages {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 25px;
+        }
+
+        .stage {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            width: 200px;
+        }
+
+        .stage span {
+            font-size: 45px;
+        }
+
+        #importance {
+            background-color: #fff0f5;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #754b91;
+            color: Black;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            background-color: #a34b9b;
+        }
+
+        footer {
+            background-color: #754b91;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 32px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 8px;
+            }
+
+            .hero img {
+                height: 230px;
+            }
+
+            section {
+                padding: 35px 5%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="home">
+        <h1> Butterflies of the World </h1>
+        <p>Discover the beauty, colors, and wonderful life of butterflies!</p>
+    </header>
+
+    <nav>
+	<body background="black">
+        <a href="#index">Home</a>
+        <a href="#about">About</a>
+        <a href="#species">Species</a>
+        <a href="#life-cycle">Life Cycle</a>
+        <a href="#importance">Importance</a>
+	
+    </nav>
+
+    <div class="hero">
+        <img
+            src="https://img.freepik.com/premium-photo/vibrant-garden-with-colorful-butterflies_1126694-18142.jpg"
+            alt="Beautiful butterfly resting on a flower">
+        <h2>Welcome to the Butterfly Garden!</h2>
+        <p>Explore the fascinating world of these delicate and colorful insects.</p>
+    </div>
+
+    <section id="about">
+        <h2>About Butterflies</h2>
+        <p>
+            Butterflies are beautiful insects known for their colorful wings
+            and graceful flight. They belong to the order Lepidoptera, along
+            with moths. Butterflies can be found in gardens, forests, meadows,
+            and many other habitats around the world.
+        </p>
+        <p>
+            They feed mainly on flower nectar and play an important role
+            in nature by helping pollinate plants.
+        </p>
+    </section>
+
+    <section id="species">
+        <h2>Beautiful Butterfly Species</h2>
+        <p>Here are three fascinating butterflies from around the world.</p>
+
+        <div class="facts">
+            <div class="card">
+                <img
+                    src="https://tse4.mm.bing.net/th/id/OIP.9RXdE0gxwYekC4hBJsjQlgHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="Monarch butterfly">
+                <h3>Monarch Butterfly</h3>
+                <p>
+                    Famous for its orange and black wings, the monarch is
+                    known for its remarkable long-distance migration.
+                </p>
+            </div>
+
+            <div class="card">
+                <img
+                    src="https://tse2.mm.bing.net/th/id/OIP.jYoGwa1E_XMsfiq5ktTTzAHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="Colorful butterfly">
+                <h3>Blue Morpho</h3>
+                <p>
+                    This tropical butterfly is famous for its brilliant
+                    blue wings and lives in the forests of Central and
+                    South America.
+                </p>
+            </div>
+
+            <div class="card">
+                <img
+                    src="https://tse1.mm.bing.net/th/id/OIP.GaG57F_XLXmopPhVaznMhwHaEO?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="Flowers in a garden">
+                <h3>Swallowtail Butterfly</h3>
+                <p>
+                    Many swallowtail butterflies have colorful patterns
+                    and distinctive tail-like extensions on their hindwings.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="life-cycle">
+        <h2>The Life Cycle of a Butterfly</h2>
+        <p>Butterflies develop through four amazing stages.</p>
+
+        <div class="stages">
+            <div class="stage">
+                
+                <h3>1. Egg</h3>
+                <p>A butterfly lays tiny eggs on suitable host plants.</p>
+            </div>
+
+            <div class="stage">
+               
+                <h3>2. Caterpillar</h3>
+                <p>The caterpillar hatches and eats leaves as it grows.</p>
+            </div>
+
+            <div class="stage">
+                
+                <h3>3. Pupa</h3>
+                <p>Inside the chrysalis, the caterpillar transforms.</p>
+            </div>
+
+            <div class="stage">
+               
+                <h3>4. Adult</h3>
+                <p>The adult butterfly emerges, expands its wings, and flies.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="importance">
+        <h2>Why Are Butterflies Important?</h2>
+        <p>
+            Butterflies help pollinate flowers, support healthy ecosystems,
+            and provide food for other animals. They can also help scientists
+            understand changes in the environment.
+        </p>
+        <p>
+            We can protect butterflies by planting native flowers,
+            avoiding unnecessary pesticides, and preserving their habitats.
+        </p>
+
+        <a
+            class="button"
+            href="https://learnbutterflies.com/topics/butterfly-facts/"
+            target="_blank"
+            rel="noopener noreferrer">
+            Learn More About Butterflies
+        </a>
+    </section>
+
+    <footer>
+        <p>🦋 Butterflies of the World 🦋</p>
+        <p>Protect nature, plant flowers, and let butterflies fly!</p>
+        <p>&copy; 2026 Butterfly World | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
